@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi Akka</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio src="music/selvana.mp3" preload="auto" loop></audio>
+    <audio src="music/vivekna.mp3" preload="auto" loop></audio>
+    <audio src="music/pavaka.mp3" preload="auto" loop></audio>
+    <audio src="music/mathyka.mp3" preload="auto" loop></audio>
+    <audio src="music/hellan.mp3" preload="auto" loop></audio>
+    <audio src="music/iyappan.mp3" preload="auto" loop></audio>
+    <audio src="music/sakthi.mp3" preload="auto" loop></audio>
+    <audio src="music/introSong.mp3" preload="auto"></audio>
+    <section id="openingPage" onclick="loadMain()" class="openPage">
+      <h1>Tap for a small surprise!</h1>
+      <p id="emoji">💗</p>
+    </section>
+    <main id="mainPage" class="mainPage">
+      <div class="confetti-container"></div>
+      <header id="introduction">
+        <div id="image-container">
+          <img src="header.png" alt="Akka" />
+          <div class="gradient-overlay"></div>
+          <div id="text">To Our Dear Maha Akka</div>
+        </div>
+        <p id="info">"Yengal anbana akka 😚 ku oru small memento!💗"</p>
+      </header>
+      <section id="gallery">
+        <div id="person">
+          <div id="tab" onclick="showPic(0)">
+            <div id="nameTag">
+              <img id="face" src="proflie/selvanAPro.jpeg" alt="face" />
+              <p id="name">Selva</p>
+            </div>
+            <button id="dropButton" class="dropButton">V</button>
+          </div>
+          <div id="slide" class="slide">
+            <img src="images/group1.jpeg" alt="notAvailable" />
+          </div>
+          <div class="swipe"><< swipe For more >></div>
+          <div id="stats" class="stats">💖450 💬70</div>
+          <div id="caption" class="caption">
+            Hi ka miss you so much, uh uh ha ha.......
+            abcdefghijklmnopqrstuvwxyz
+          </div>
+          <button class="capTog" onclick="toggleCaption(0)">Hear My 💗</button>
+        </div>
+
+        <div id="person">
+          <div id="tab" onclick="showPic(1)">
+            <div id="nameTag">
+              <img id="face" src="proflie/VivekNaPro.jpeg" alt="face" />
+              <p id="name">Vivek</p>
+            </div>
+            <button id="dropButton" class="dropButton">V</button>
+          </div>
+          <div id="slide" class="slide">
+            <img src="images/vivek1.jpeg" alt="anna" />
+          </div>
+          <div class="swipe"><< swipe For more >></div>
+          <div id="stats" class="stats">💗 200 💬70</div>
+          <div id="caption" class="caption">
+            Maharasi - intha lusa patthi enna sollanu theryala enaku
+            <br /><br />Enaku girlsla frndulam avlo illa ana ava orutthi mattum
+            tha iruka na vera yartium close ah pesa mattan konjam lusu anala
+            thangam ava😚 enaku avala romba pudikum pasangala nerya avala kindel
+            pannuvanga enaku kastama irukum yedhuku ipdi irukanu, edhunalum open
+            ah pesalam avakitta oru ponnukuda pesuramariye feel irukathu🤗 aprom
+            yaruko epdio theryala enaku ava nalla pillai! romba pidikum♥️ ippo
+            love pandra, sonna ammakum udambu sari illanu soldra kastama iruku
+            ithuku aprom nanum velila poita en niyabagamlam irukumanu kuda
+            theryala enaku ana ava manasuku ava kandippa nallarupa enaku
+            theryum💎 avaluku pidichamari irupa edhum problem edhunalum sari ava
+            vera engeyum irunthalum paravalla enna kupiduva nenika👀 avlotha ine
+            eppo papomnu theryala ithuku aprom na clg nu miss pandra oru girl
+            maha aprom yea lusu sister🤗 Ponnungala vera yaru mahata kettu intha
+            kanaga numbera vangi thara slu innonu edhukum alama irukanum
+            mukkiyama ava trisha sirichite iruntha tha alaga irukum🫂.........
+            Vera ithukumela sonna crinchu ayrum.......... <br /><br />
+            Tata maha🫂 onnum mattum niyabagam vatchuko unaku enna problem nalum
+            enaku ph pannu na enga irunthalum ennala mudincha vera help
+            pannuvan❤️ <br /><br />
+            Mukkiyama solla maranthita dress konjam olunga podamattaka shall
+            pottu ponum enga ponalum konjamathu ponna iruntha nallarukum😑
+            nenika
+          </div>
+          <button class="capTog" onclick="toggleCaption(1)">Hear My 💗</button>
+        </div>
+
+        <div id="person">
+          <div id="tab" onclick="showPic(2)">
+            <div id="nameTag">
+              <img id="face" src="proflie/PavaikaPro.jpeg" alt="face" />
+              <p id="name">Paavai Karithma Prasanthi</p>
+            </div>
+            <button id="dropButton" class="dropButton">V</button>
+          </div>
+          <div id="slide" class="slide">
+            <img src="images/paavaika.jpeg" alt="" />
+          </div>
+          <div class="swipe"><< swipe For more >></div>
+          <div id="stats" class="stats">💗 200 💬70</div>
+          <div id="caption" class="caption">Hi abcdefghijklmnopqrstuvwxyz</div>
+          <button class="capTog" onclick="toggleCaption(2)">Hear My 💗</button>
+        </div>
+
+        <div id="person">
+          <div id="tab" onclick="showPic(3)">
+            <div id="nameTag">
+              <img id="face" src="proflie/DuraiKaPro.jpeg" alt="face" />
+              <p id="name">Durai Mathy</p>
+            </div>
+            <button id="dropButton" class="dropButton">V</button>
+          </div>
+          <div id="slide" class="slide">
+            <img src="images/duraika2.jpeg" alt="" />
+            <img src="images/durai1.jpeg" alt="" />
+            <img src="images/duraika3.jpeg" alt="" />
+            <img src="images/duraika4.jpeg" alt="" />
+          </div>
+          <div class="swipe"><< swipe For more >></div>
+          <div id="stats" class="stats">💗 200 💬70</div>
+          <div id="caption" class="caption">
+            Hii cutie 🙂<br /><br />
+            Thank you for being with my up's and down's . You are always my
+            master piece❤️ and my precious one . <br /><br />
+            On the first day of my clg day , 💜your are the first idiot , who
+            talking to me with a matured freelance advice. 😊 & My first clg
+            mate is you only 🪬. <br /><br />I know you faced many obstacles and
+            milestones in your 💯21 years of life .... <br /><br />
+            Our Memories of Yesterday 💕 will last a Lifetime. ✨Well all the
+            Best, forget the Rest and someday will find that these are the Best
+            of Times 🥰 <br /><br />Don't cry because it's over. Smile because
+            it happened.🎓👩🏻‍🎓
+          </div>
+          <button class="capTog" onclick="toggleCaption(3)">Hear My 💗</button>
+        </div>
+
+        <div id="person">
+          <div id="tab" onclick="showPic(4)">
+            <div id="nameTag">
+              <img id="face" src="proflie/hellanPro.jpeg" alt="face" />
+              <p id="name">Hellan Selvarani</p>
+            </div>
+            <button id="dropButton" class="dropButton">V</button>
+          </div>
+          <div id="slide" class="slide">
+            <img src="images/hellan3.jpeg" alt="" />
+            <img src="images/hellan2.jpeg" alt="" />
+            <img src="images/hellan1.jpeg" alt="" />
+          </div>
+          <div class="swipe"><< swipe For more >></div>
+          <div id="stats" class="stats">❤️ 200 💬70</div>
+          <div id="caption" class="caption">
+            she is my angel. 😇 she is my beautiful sister. good girl illa.
+            summa good girl than. my sharing partner. smilly girl. <br /><br />
+            kuda irukuravangala jolly pathupinga 🤗 and unga kuda irutha eppavom
+            jolly ya irukum. na ungala romba miss pannuven. Ninga ennoda
+            sandakari. unga kitta ellame pudikum.ninga enna pannalum
+            pudikum.ungaleye ennaku romba pudikum! <br /><br />i really miss you
+            and love you💞.
+          </div>
+          <button class="capTog" onclick="toggleCaption(4)">Hear My 💗</button>
+        </div>
+
+        <div id="person">
+          <div id="tab" onclick="showPic(5)">
+            <div id="nameTag">
+              <img id="face" src="proflie/iyapanPro.jpg" alt="face" />
+              <p id="name">Iyappan</p>
+            </div>
+            <button id="dropButton" class="dropButton">V</button>
+          </div>
+          <div id="slide" class="slide">
+            <img src="images/iyappa1.jpeg" alt="" />
+          </div>
+          <div class="swipe"><< swipe For more >></div>
+          <div id="stats" class="stats">💗 200 💬70</div>
+          <div id="caption" class="caption">Hi abcdefghijklmnopqrstuvwxyz</div>
+          <button class="capTog" onclick="toggleCaption(5)">Hear My 💗</button>
+        </div>
+
+        <div id="person">
+          <div id="tab" onclick="showPic(6)">
+            <div id="nameTag">
+              <img id="face" src="proflie/mePro.jpeg" alt="face" />
+              <p id="name">Sakthivel Durai</p>
+            </div>
+            <button id="dropButton" class="dropButton">V</button>
+          </div>
+          <div id="slide" class="slide">
+            <img src="images/sakthivel1.jpeg" alt="" />
+            <img src="images/sakthivel2.jpeg" alt="" />
+            <img src="images/sakthivel3.jpeg" alt="" />
+          </div>
+          <div class="swipe"><< swipe For more >></div>
+          <div id="stats" class="stats">💗 200 💬70</div>
+          <div id="caption" class="caption">
+            Hi akka! Thanks for being the best sister💎 i could ever ask for!
+            💗<br /><br />
+            Yeapothum happy ah erunga ka 🫡, Nalla saapdunga! Keep on smiling! 😁
+            Neenga romba jolly type! Naa podura mokkaiku la serichirukenga 🤧
+            romba thanks ka Yeapothum ipadiye erunga ka! Don't change yourself
+            for anyone 🙏<br /><br />
+            Ungala yeapothum yea sontha akka vaa tha paaken! So life la evlo
+            kastam vanthalum brave ah erunga! Ungaluku yeapom help naalum unga
+            thambi sakthi 😎 ta kealunga ka 🫡 <br /><br />
+            Yenakaha Naa keakamaley onnu pannenga ka, yenakaha peasunenga, apdi
+            yarum yenakaha pannathu illa ka 😭 yenaku romba happy ah erunthuchi
+            atha marakavey maaten ka! Yeanta urumayoda kalyana seeru keakum
+            pothu romba happy ah erunthuchi ka😭 kandipa thambi ya yea kadamaya
+            mudichiduven ka 🫡! <br /><br />Unga smile yeapovum apadiyea
+            erukanum! Don't be a stranger ka! Ungala yeapovum miss pannuven!
+            Neenga ponathu yaru yenna adipa 🤕, appo appo vanthu adichitu ponga
+            ka😤 <br /><br />
+            Always be happy! Bye ka 🥲👋
+          </div>
+          <button class="capTog" onclick="toggleCaption(6)">Hear My 💗</button>
+        </div>
+      </section>
+      <footer id="footer">
+        Thank you so much for being such a wonderfull sister and a great friend!
+        💝
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
